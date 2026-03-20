@@ -1,5 +1,5 @@
 import { Outlet,} from "react-router";
-import navigator from "../components/navigator";  
+import Navbar from "../components/Navigator";
 
 export default function MainLayout () {
 
@@ -7,7 +7,7 @@ export default function MainLayout () {
     return (
         <div>
             <Outlet/>
-            <navigator/>
+            <Navbar/>
         </div>
     )
 }

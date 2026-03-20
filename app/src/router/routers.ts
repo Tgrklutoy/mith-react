@@ -9,7 +9,7 @@ import Login from "../pages/Register/login";
 import Profile from "../pages/Profile/Profile";
 import MainLayout from "../layouts/Mainlayot";
 import AuthLayout from "../layouts/AuthLayot";
-import ChatsLayout from "../layouts/Chatslayout";
+import ChatsLayout from "../layouts/ChatsLayout";
 
 
 
