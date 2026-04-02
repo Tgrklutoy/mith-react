@@ -4,17 +4,18 @@ export default function CheckRound () {
     let isAuth = false
     const location = useLocation();
     let navigate = useNavigate();
-    if ( localStorage.getItem("UserId") != null) {
-        isAuth = true 
-        
-
+    if ( localStorage.getItem("UserId") !=null) {
+        isAuth = true
     };
     if (location.pathname.includes("/auth")) {
         if (isAuth){
             navigate("/")
         }
-        else {
-            navigate("/auth/register")
-    }    
     }
+    else {
+        if (!isAuth){
+            navigate("/auth/register")
+        }
+        
+    };
 }
