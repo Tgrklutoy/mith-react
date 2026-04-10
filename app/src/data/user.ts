@@ -1,4 +1,5 @@
 import type { User } from "../type/UserType";
+import { posts } from "./post";
 
 const users: User[] = [
     {id: 1,
@@ -15,7 +16,7 @@ const users: User[] = [
     description: '2' ,
     posts: [] ,
     friends: [],
-    email: '2@gmail.com',
+    email: 's2@gmail.com',
     last_seen: 1774628086,},
     {id: 3,
     username: 'Анти-Хайп',
@@ -23,7 +24,11 @@ const users: User[] = [
     description: '4' ,
     posts: [] ,
     friends: [],
-    email: '2@gmail.com',
+    email: 'ss2@gmail.com',
     last_seen: 1774628086,},
 ]
-export default users;
+
+
+users[1].friends = [users[0]] 
+users[2].posts = [posts[2]]
+export default users; 
