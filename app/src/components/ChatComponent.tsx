@@ -1,14 +1,14 @@
 import type { Chat } from "../type/ChatType";
 import "./Chatcomponent.css"
 
-export default function ChatComponent (props: {chat: Chat}){
+export default function ChatComponent (props: {chat: Chat, selected: boolean}){
     
     
 
 
 
     return(
-        <div  key={props.chat.id} className="chat-card">
+        <div  key={props.chat.id} className={props.selected ? "selected" : "chat-card"}>
         <img src={props.chat.avatar} alt={props.chat.title} className="chat-avatar" />
         <div className="chat-details">
             

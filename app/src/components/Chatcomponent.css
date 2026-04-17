@@ -1,4 +1,8 @@
 .chat-card{
-    color: antiquewhite;
+    color: rgb(255, 4, 4)
 
+}
+
+.selected{
+    color: rgb(0, 0, 0);
 }
